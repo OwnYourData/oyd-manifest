@@ -1,0 +1,61 @@
+{
+    "name":"ZAMG Erdbebendaten",
+    "identifier":"oyd.zamg.seismic",
+    "language":"de",
+    "version":"0.3.2",
+    "description":"Daten über Erdstöße in deiner Umgebung zur Verfügung gestellt von ZAMG.",
+    "info_url":"https://www.ownyourdata.eu/de/plugins/zamg",
+    "picture":"",
+    "permissions":[ 
+        "oyd.zamg.seismic.*:*"
+    ],
+    "sources":[
+        {
+            "name":"ZAMG Erdbebendaten",
+            "identifier":"oyd.source.zamg.seismic",
+            "description":"Daten über Erdstöße in deiner Umgebung zur Verfügung gestellt von ZAMG.",
+            "type":"pull",
+            "config":{
+                "form":"PHNjcmlwdD4KJCggZG9jdW1lbnQgKS5yZWFkeShmdW5jdGlvbigpIHsKICAgIHZhciBidXR0b24gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYnRuJyk7CiAgICBidXR0b24uYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLCBmdW5jdGlvbiAoZXZlbnQpIHsKICAgICAgICB2YXIgYWRkcmVzcyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhZGRyZXNzJykudmFsdWU7CiAgICAgICAgJC5nZXRKU09OKCdodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy9zZWFyY2g/cT0nICsgYWRkcmVzcyArICcmZm9ybWF0PWpzb24mcG9seWdvbj0xJmFkZHJlc3NkZXRhaWxzPTEnLCBmdW5jdGlvbihkYXRhKSB7CiAgICAgICAgICAgICQoJ2lucHV0W25hbWU9bGF0XScpLnZhbChkYXRhWzBdWyJsYXQiXSk7CiAgICAgICAgICAgICQoJ2lucHV0W25hbWU9bG9uZ10nKS52YWwoZGF0YVswXVsibG9uIl0pOwogICAgICAgIH0pOwogICAgfSk7Cn0pOwpmdW5jdGlvbiBvcGVuVVJMKHVybCkgewogICAgdmFyIHdpbiA9IHdpbmRvdy5vcGVuKHVybCwgJ19ibGFuaycpOwogICAgaWYgKHdpbikgewogICAgICAgIHdpbi5mb2N1cygpOwogICAgfSBlbHNlIHsKICAgICAgICBhbGVydCgnQnR0ZSBha3RpdmllcmUgUG9wLXVwcyBmw7xyIGRpZXNlIFNlaXRlJyk7CiAgICB9Cn0KPC9zY3JpcHQ+CjxwPjxzdHJvbmc+QWRkcmVzc2FiZnJhZ2UgZsO8ciBLb29yZGluYXRlbjwvc3Ryb25nPjwvcD4KPHA+PGlucHV0IGlkPSJhZGRyZXNzIiB0eXBlPSJ0ZXh0IiBwbGFjZWhvbGRlcj0iR2liIGhpZXIgZGllIEFkcmVzc2UgZWluIiAvPjxicj4KPGJ1dHRvbiB0eXBlPSJidXR0b24iIGlkPSJidG4iIHN0eWxlPSJmbG9hdDogcmlnaHQ7Ij5Lb29yZGluYXRlbiBhYmZyYWdlbjwvYnV0dG9uPjwvcD4KPGxhYmVsIGZvcj0ibGF0IiBzdHlsZT0ibWFyZ2luLXRvcDogMjVweDsiPkJyZWl0ZW5ncmFkPC9sYWJlbD4KPGlucHV0IGNsYXNzPSJmb3JtLWNvbnRyb2wiIHR5cGU9InRleHQiIG5hbWU9ImxhdCIgdmFsdWU9IltMQVRdIj4KPGxhYmVsIGZvcj0ibG9uZyI+TMOkbmdlbmdyYWQ8L2xhYmVsPgo8aW5wdXQgY2xhc3M9ImZvcm0tY29udHJvbCIgdHlwZT0idGV4dCIgbmFtZT0ibG9uZyIgdmFsdWU9IltMT05HXSI+CjxwPjxhIGhyZWY9IiIgb25jbGljaz0ib3BlblVSTCgnaHR0cHM6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvP21sYXQ9JyArICQoJ2lucHV0W25hbWU9bGF0XScpLnZhbCgpICsgJyZhbXA7bWxvbj0nICsgJCgnaW5wdXRbbmFtZT1sb25nXScpLnZhbCgpICsgJycpOyByZXR1cm4gZmFsc2U7Ij5Lb29yZGluYXRlbiBhdWYgS2FydGUgYW56ZWlnZW48L2E+PC9wPgo8bGFiZWwgZm9yPSJyYWRpdXMiPlVta3JlaXMgKGluIGttKTwvbGFiZWw+CjxpbnB1dCBjbGFzcz0iZm9ybS1jb250cm9sIiB0eXBlPSJ0ZXh0IiBuYW1lPSJyYWRpdXMiIHZhbHVlPSJbUkFESVVTXSI+",
+                "fields":[{
+                    "seismic":{
+                        "lat":"[LAT]",
+                        "long":"[LONG]",
+                        "radius":"[RADIUS]"
+                    }
+                }],
+                "validation":[{
+                    "seismic":{
+                        "lat":"float",
+                        "long":"float",
+                        "radius":"float"
+                    }
+                }],
+                "defaults":{
+                    "seismic":{
+                        "repo_name":"Seismic",
+                        "repo_identifier":"oyd.zamg.seismic",
+                        "repo_encryption":"false"
+                    }
+                },
+                "repos":{
+                    "seismic":{
+                        "name":"[DEFAULT_SEISMIC_REPO_NAME]",
+                        "identifier":"[DEFAULT_SEISMIC_REPO_IDENTIFIER]",
+                        "encryption":"[DEFAULT_SEISMIC_REPO_ENCRYPTION]"
+                    }
+                },
+                "tasks":[{
+                    "name":"Seismic data from ZAMG",
+                    "identifier":"oyd.zamg.seismic",
+                    "command":"ZWNobyAneyJsYXQiOiJbTEFUXSIsImxvbmciOiJbTE9OR10iLCJyYWRpdXMiOiJbUkFESVVTXSIsInBpYV91cmwiOiJbUElBX1VSTF0iLCJhcHBfa2V5IjoiW0FQUF9LRVldIiwiYXBwX3NlY3JldCI6IltBUFBfU0VDUkVUXSIsInNvdXJjZV9pZCI6IltTT1VSQ0VfSURdIn0nIHwgZG9ja2VyIHJ1biAtaSAtLXJtIG95ZGV1L3Nydi1zb3VyY2VfemFtZyAvYmluL3J1bi5zaCB8IGRvY2tlciBydW4gLWkgLS1ybSBveWRldS9zcnYtcGlhX3dyaXRlIC9iaW4vcnVuLnNoICd7InBpYV91cmwiOiJbUElBX1VSTF0iLCJhcHBfa2V5IjoiW0FQUF9LRVldIiwiYXBwX3NlY3JldCI6IltBUFBfU0VDUkVUXSIsInJlcG8iOiJbUkVQT19TRUlTTUlDX0lERU5USUZJRVJdIiwibWFwIjpbeyJ0aW1lc3RhbXAiOiJ0aW1lc3RhbXAifSx7ImxhdCI6ImxhdCJ9LHsibG9uZyI6ImxvbmcifSx7ImRlcHRoIjoiZGVwdGgifSx7Im1hZyI6Im1hZyJ9LHsibWFndHlwZSI6Im1hZ3R5cGUifSx7InphbWdfaWQiOiJ6YW1nX2lkIn0seyJveWRfc291cmNlX3BpbGVfaWQiOiJveWRfc291cmNlX3BpbGVfaWQifV0sIm1lcmdlIjpbInphbWdfaWQiXX0n",
+                    "schedule":"10 6 * * *"
+                }]
+            }
+        }
+    ],
+    "views":[],
+    "mobiles":[],
+    "tasks":[],
+    "reports":[]
+}
